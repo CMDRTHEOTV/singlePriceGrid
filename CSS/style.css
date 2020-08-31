@@ -5,6 +5,7 @@ html {
 body {
   margin: 50% auto;
   font-family: 'Karla', sans-serif;
+  background-color: hsl(204, 43%, 93%);
 }
 
 .attribution {
@@ -21,26 +22,194 @@ body {
   height: 50%;
   width: 50%;
   grid-template-columns: auto auto;
+  border-radius: 25px;
+  box-shadow: 0 4px 4px 4px rgba(0,0,0,0.05);
 }
 
 .grid-item-header {
-  border: 1px solid black;
+  border: 0 solid black;
+  background-color: white;
   border-radius: 25px 25px 0 0;
   grid-column-start: 1;
   grid-column-end: 3;
   padding: 2rem 6rem 2rem 3rem;
 }
 
+.grid-item-header h1 {
+  color: HSL(179, 62%, 36%);
+}
+
+.grid-item-header h3 {
+  color: hsl(71, 73%, 54%);
+}
+
+.grid-item-header p {
+  color: hsl(218, 22%, 67%);
+}
+
 .grid-item-1 {
-  border: 1px solid black;
+  border: 0 solid black;
+  background-color: HSL(179, 62%, 36%);
   border-radius: 0 0 0 25px;
   padding: 2rem 2rem 2rem 3rem;
   line-height: 1.7;
 }
 
+.dollar-text {
+  color: hsl(204, 43%, 93%);
+}
+
+span {
+  color: white;
+  font-size: 2rem;
+}
+
+.grid-item-1 h3 {
+  color: white;
+}
+
+.grid-item-1 p {
+  color: white;
+}
+
+.myButton {
+	background-color:hsl(71, 73%, 54%);
+	border-radius:8px;
+	border:1px solid hsl(71, 73%, 54%);
+	display: block;
+	cursor:pointer;
+	color:#ffffff;
+	padding:19px 76px;
+  margin: 40px auto auto auto;
+	text-decoration:none;
+  text-align: center;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+
 .grid-item-2 {
-  border: 1px solid black;
+  border: 0 solid black;
+  background-color: HSL(184, 22%, 56%);
   border-radius: 0 0 25px 0;
   padding: 2rem 2rem 2rem 3rem;
   line-height: 1.7;
+}
+
+.grid-item-2 h3 {
+  color: white;
+}
+
+.grid-item-2 p {
+  color: white;
+}
+
+@media only screen and (max-width: 375px) {
+  /* For mobile phones: */
+
+  body {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+  }
+
+  .attribution {
+   font-size: 11px; text-align: center;
+  }
+  .attribution a {
+   color: hsl(228, 45%, 44%);
+  }
+
+  .grid-container {
+    margin: auto;
+    text-align: left;
+    display: grid;
+    height: auto;
+    width: auto;
+    grid-template-columns: auto;
+    border-radius: 25px;
+    box-shadow: 0 4px 4px 4px rgba(0,0,0,0.05);
+  }
+
+  .grid-item-header {
+    border: 0 solid black;
+    background-color: white;
+    border-radius: 25px 25px 0 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 2rem 6rem 2rem 3rem;
+  }
+
+  .grid-item-header h1 {
+    color: HSL(179, 62%, 36%);
+  }
+
+  .grid-item-header h3 {
+    color: hsl(71, 73%, 54%);
+  }
+
+  .grid-item-header p {
+    color: hsl(218, 22%, 67%);
+  }
+
+  .grid-item-1 {
+    border: 0 solid black;
+    background-color: HSL(179, 62%, 36%);
+    border-radius: 0 0 0 0;
+    padding: 2rem 2rem 2rem 3rem;
+    line-height: 1.7;
+  }
+
+  .dollar-text {
+    color: hsl(204, 43%, 93%);
+  }
+
+  span {
+    color: white;
+    font-size: 2rem;
+  }
+
+  .grid-item-1 h3 {
+    color: white;
+  }
+
+  .grid-item-1 p {
+    color: white;
+  }
+
+  .myButton {
+  	background-color:hsl(71, 73%, 54%);
+  	border-radius:8px;
+  	border:1px solid hsl(71, 73%, 54%);
+  	display: block;
+  	cursor:pointer;
+  	color:#ffffff;
+  	padding:19px 76px;
+    margin: 40px auto auto auto;
+  	text-decoration:none;
+    text-align: center;
+  	text-shadow:0px 1px 0px #2f6627;
+  }
+
+  .myButton:hover {
+  	background-color:#5cbf2a;
+  }
+
+  .grid-item-2 {
+    border: 0 solid black;
+    background-color: HSL(184, 22%, 56%);
+    border-radius: 0 0 25px 25px;
+    padding: 2rem 2rem 2rem 3rem;
+    line-height: 1.7;
+  }
+
+  .grid-item-2 h3 {
+    color: white;
+  }
+
+  .grid-item-2 p {
+    color: white;
+  }
 }
