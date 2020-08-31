@@ -1,3 +1,7 @@
+body {
+  font-family: 'Karla', sans-serif;
+}
+
 .attribution {
  font-size: 11px; text-align: center;
 }
@@ -6,6 +10,19 @@
 }
 
 .grid-container {
+  margin: auto;
+  text-align: center;
   display: grid;
-  grid-template-columns: auto auto;  
+  height: 50%;
+  width: 75%;
+  grid-template-columns: auto auto;
+}
+
+.grid-container > div{
+  border: 1px solid black;
+}
+
+.grid-item-header {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
