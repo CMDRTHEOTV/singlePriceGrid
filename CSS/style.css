@@ -4,3 +4,8 @@
 .attribution a {
  color: hsl(228, 45%, 44%);
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;  
+}
