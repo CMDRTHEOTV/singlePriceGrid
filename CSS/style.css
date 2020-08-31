@@ -1,4 +1,9 @@
+html {
+  max-width: 1440px;
+}
+
 body {
+  margin: 50% auto;
   font-family: 'Karla', sans-serif;
 }
 
@@ -11,18 +16,31 @@ body {
 
 .grid-container {
   margin: auto;
-  text-align: center;
+  text-align: left;
   display: grid;
   height: 50%;
-  width: 75%;
+  width: 50%;
   grid-template-columns: auto auto;
 }
 
-.grid-container > div{
-  border: 1px solid black;
-}
-
 .grid-item-header {
+  border: 1px solid black;
+  border-radius: 25px 25px 0 0;
   grid-column-start: 1;
   grid-column-end: 3;
+  padding: 2rem 6rem 2rem 3rem;
+}
+
+.grid-item-1 {
+  border: 1px solid black;
+  border-radius: 0 0 0 25px;
+  padding: 2rem 2rem 2rem 3rem;
+  line-height: 1.7;
+}
+
+.grid-item-2 {
+  border: 1px solid black;
+  border-radius: 0 0 25px 0;
+  padding: 2rem 2rem 2rem 3rem;
+  line-height: 1.7;
 }
